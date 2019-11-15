@@ -76,9 +76,8 @@ const Profile = () => {
                 <div class="form-group">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                    <input type="button" class="btn btn-primary" value="Save Changes" />
-                    <span></span>
-                    <input type="reset" class="btn btn-default" value="Cancel" />
+                        <input type="button" class="btn btn-danger m-2" value="Cancel" />
+                        <input type="button" class="btn btn-info m-2" value="Save Changes" />
                     </div>
                 </div>
                 
