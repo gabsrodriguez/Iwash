@@ -15,6 +15,10 @@
     width: 70%;
     opacity: 0.3;
 }
+.icon_noavailable {
+    color: red;
+    font-size: 3rem;
+}
 .machineName {
     color: #000000;
     font-weight: bold;

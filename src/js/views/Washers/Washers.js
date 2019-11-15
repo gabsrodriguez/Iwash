@@ -127,7 +127,7 @@ const Machine = (props) => {
                                     <h4 className={["text-center", styles.machineName].join(' ')} >{washersData[WasherId].name}</h4>
                                     <div className="row">
                                         <div className="col">
-                                            {washersData[WasherId].available === "available" ? <i className={["fas fa-check-circle", styles.available].join(' ')}></i> : <i class="fas fa-times-circle" style={{color: "red"}}></i>}
+                                            {washersData[WasherId].available === "available" ? <i className={["fas fa-check-circle", styles.available].join(' ')}></i> : <i class={["fas fa-times-circle", styles.noavailable].join(' ')}></i>}
                                         </div>
                                         <div className="col">
                                             <span className={["badge badge-pill", styles.number].join(' ')}>{washersData[WasherId].number}</span>

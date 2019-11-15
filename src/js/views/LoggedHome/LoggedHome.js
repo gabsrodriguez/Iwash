@@ -48,7 +48,7 @@ const LoggedHome = () => {
                                         <div className="card-body">
                                             <div className="card-text">
                                                 <h4 className={["text-center", styles.machineName].join(' ')} >{item.name}</h4>
-                                                {item.available === "available" ? <i className={["fas fa-check-circle", styles.available].join(' ')}></i> : <i class="fas fa-times-circle" style={{color: "red"}}></i>}
+                                                {item.available === "available" ? <i className={["fas fa-check-circle", styles.available].join(' ')}></i> : <i className={["fas fa-times-circle", styles.icon_noavailable].join(' ')}></i>}
                                                 <span className={["badge badge-pill float-right", styles.number].join(' ')}>{item.number}</span>
                                             </div>
                                         </div>
@@ -69,7 +69,7 @@ const LoggedHome = () => {
                                         <div className="card-body">
                                             <div className="card-text">
                                                 <h4 className={["text-center", styles.machineName].join(' ')} >{item.name}</h4>
-                                                {item.available === "available" ? <i className={["fas fa-check-circle", styles.available].join(' ')}></i> : <i class="fas fa-times-circle" style={{color: "red"}}></i>}
+                                                {item.available === "available" ? <i className={["fas fa-check-circle", styles.available].join(' ')}></i> : <i className={["fas fa-times-circle", styles.icon_noavailable].join(' ')}></i>}
                                                 <span className={["badge badge-pill float-right", styles.number].join(' ')}>{item.number}</span>
                                             </div>
                                         </div>

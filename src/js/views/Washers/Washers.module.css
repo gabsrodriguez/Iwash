@@ -22,6 +22,10 @@
     border-radius: 100%;
     background-color: black;
 }
+.noavailable {
+    color: red;
+    font-size: 3rem;
+}
 .btnGreen:hover {
     background-color: #9BDCFA!important;
     opacity: 0.6;
