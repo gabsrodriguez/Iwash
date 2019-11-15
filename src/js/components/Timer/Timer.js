@@ -41,7 +41,7 @@ const Timer = (props) => {
             swal("The Machine is Done" , "You can now pick up your lanudry", "success", {
                 button: "Done",
               })
-        },1000);
+        },500);
         setSwalAlert(false);
     } else {
         howTimeLeft = '00';
