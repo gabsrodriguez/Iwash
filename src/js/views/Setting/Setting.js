@@ -17,7 +17,7 @@ const Setting = () => {
                 <div className={["list-group", styles.list].join(' ')}>
                     <Link to="/profile" className="list-group-item list-group-item-action"><i className="fas fa-user fa-2x"></i> &nbsp; &nbsp; Edit Profile</Link>
                     <Link to="/wallet" className="list-group-item list-group-item-action"><i className="fas fa-hand-holding-usd fa-2x"></i> &nbsp; &nbsp; My Wallet</Link>
-                    <Link to="/" className="list-group-item list-group-item-action"><i className="fas fa-history fa-2x"></i> &nbsp; &nbsp; My Washing History</Link>
+                    <Link to="/history" className="list-group-item list-group-item-action"><i className="fas fa-history fa-2x"></i> &nbsp; &nbsp; My Washing History</Link>
                     <HashLink to='/presentation#ten' className={["list-group-item list-group-item-action", styles.gotopres].join(' ')}> <img src={geeks} alt="4geeks" width="50px" /> &nbsp;Back to Presentation</HashLink>
                 </div>
             </div>
