@@ -87,7 +87,7 @@ const Presentation = () => {
                     <br/>
                     <br/>
                     <i class="fas fa-quote-left mr-2"></i>
-                    I've been learning how to code by myself for 4 years, mostly HTML, CSS and PHP. I've been struggling a lot trying to make a dynamic website, so I started to look for a coding school in Miami and I found the Best One 4Geeks Academy. And thanks to the programme they offer, the Income Sharing Agreement, I could enrol right away and Pay once I get a Job.
+                    I've been learning how to code by myself for 4 years, mostly HTML, CSS and PHP. I've been struggling a lot trying to make a dynamic website, so I started to look for a coding school in Miami and I found the Best One 4Geeks Academy. And thanks to the program they offer, the Income Sharing Agreement, I could enrol right away and Pay once I get a Job.
                     <i class="fas fa-quote-right ml-2"></i>
                 </div>
                 <br/>
