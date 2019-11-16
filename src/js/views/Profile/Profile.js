@@ -78,7 +78,7 @@ const Profile = () => {
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
                         <Link to="/setting" class="btn btn-danger m-2" >Cancel</Link>
-                        <input type="button" class="btn btn-info m-2" value="Save Changes" />
+                        <Link to="/setting" class="btn btn-info m-2" >Save Changes</Link>
                     </div>
                 </div>
                 
