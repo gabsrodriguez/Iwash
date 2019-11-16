@@ -19,7 +19,7 @@ const Profile = () => {
             
             <div class="col-md-9 personal-info">
                 
-                <form class="form-horizontal" role="form">
+                
                 <div class="form-group">
                     <div class="col-lg-8">
                     <input class="form-control" type="text" placeholder="First name" />
@@ -81,7 +81,7 @@ const Profile = () => {
                     </div>
                 </div>
                 
-                </form>
+                
             </div>
         </div>
         </div>

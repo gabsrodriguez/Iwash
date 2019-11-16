@@ -1,6 +1,7 @@
 .section {
     padding-top: 60px;
     min-height: 600px!important;
+    cursor: url('../../img/presentation/soap.png'), auto;	
 }
 .firstPage {
     background-color: white;
@@ -15,7 +16,7 @@
 .buttonStyle {
     padding: 11px 30px;
     border: none;
-    color: #ffffff;
+    color: #000000;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -o-border-radius: 4px;
@@ -30,7 +31,7 @@
     display: inline-block;
 }
 .buttonStyle:hover {
-    color: #fff;
+    color: blue;
     text-decoration: none;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
@@ -81,3 +82,18 @@
 .forthPage {
         text-align: center;
 }
+/* Start tortuga */
+.tortuga {
+    position: fixed;
+    bottom:100px;
+    left: 0;
+    animation:linear infinite;
+    animation-name: runtortuga;
+    animation-duration: 30s;
+    }     
+  @keyframes runtortuga {
+        0% { left: -60%;}
+        50%{ left : 50%;}
+        100%{ left : 100%;}
+    }
+  /* End tortuga */

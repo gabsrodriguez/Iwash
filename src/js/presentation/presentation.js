@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { UserContext } from '../../UserContext';
 import styles from './presentation.module.css';
 
@@ -23,6 +23,8 @@ import angry from '../../img/presentation/angry.png';
 import guyPhone from '../../img/presentation/guyPhone.png';
 import idea from '../../img/presentation/idea.png';
 
+import tortuga from '../../img/presentation/tortuga.gif';
+
 import angryComputer from '../../img/presentation/angryComputer.png';
 import happyCoder from '../../img/presentation/happyCoder.png';
 import school from '../../img/presentation/school.png';
@@ -37,6 +39,7 @@ import mysql from '../../img/presentation/mysql.png';
 const Presentation = () => {
 
     const {windowHeight} = useContext(UserContext);
+    const [goTurtle, setGoTurtle] = useState('d-none');
 
     return (
         <section className={styles.section}>
@@ -59,31 +62,16 @@ const Presentation = () => {
             </div>
             <div id="two" className='pt-5' style={{height: windowHeight}}>
                 <div className={styles.header}>
-                    <h1 className={styles.title}>TABLE OF CONTENTS</h1>
+                    <h1 className={styles.title}>VICTOR'S STORY</h1>
                 </div>
-                <ol className={["mt-5",styles.listNumber].join(' ')}>
-                    <li>
-                        OUR EXPERIENCE AT 4GEEKS ACADEMY
-                    </li>
-                    <li>
-                        WHAT IS IWASH
-                    </li>
-                    <li>
-                        HOW IWASH WORKS
-                    </li>
-                    <li>
-                        WHY IWASH?
-                    </li>
-                    <li>
-                        BEHIND THE PROJECT
-                    </li>
-                    <li>
-                        HOW WAS IT BUILT
-                    </li>
-                    <li>
-                        DEMO TIME
-                    </li>
-                </ol>
+                <div className={["container mt-5",styles.listNumber].join(' ')}>
+                    <b>Victor F. Mori.</b>  From Peru 🇵🇪
+                    <br/>
+                    <br/>
+                    <i class="fas fa-quote-left mr-2"></i>
+                    Before I started the 4Geeks Academy program, I was an Analyst/Program for an iSeries environment, using the programming languages as RPG-IV and Free-Format. I decided to update my programming skills with the new technologies and 4Geeks Academy was a good decision.  Because, right now I can use HTML, CSS, javaScript and React.js as Frontend and Phyton/Flask and MySql as Backend, to build web applications.  
+                    <i class="fas fa-quote-right ml-2"></i>
+                </div>
                 <br/>
                 <div className={styles.bouttons}>
                     <a href="#one" className={["scroll mr-3", styles.buttonStyle].join(' ')}>previous</a>
@@ -92,19 +80,16 @@ const Presentation = () => {
             </div>
             <div id="three" className='pt-5' style={{height: windowHeight}}>
                 <div className={styles.header}>
-                    <h1 className={styles.title}>OUR EXPERIENCE AT 4GEEKS ACADEMY</h1>
+                    <h1 className={styles.title}>SAMIR'S STORY</h1>
                 </div>
-                <ul className={["mt-5",styles.listExperience].join(' ')}>
-                    <li>
-                        We enjoyed all my learning time in 4Geeks Academy, because everyday we did learn new and interesting things for our career.
-                    </li>
-                    <li>
-                        We really liked the fact that we have 1 teacher for 2 students, that make it very easy to learn.
-                    </li>
-                    <li>
-                        They Have amazing teachers.
-                    </li>
-                </ul>
+                <div className={["container mt-5",styles.listExperience].join(' ')}>
+                    <b>Samir Benzada. </b> From France 🇫🇷
+                    <br/>
+                    <br/>
+                    <i class="fas fa-quote-left mr-2"></i>
+                    I've been learning how to code by myself for 4 years, mostly HTML, CSS and PHP. I've been struggling a lot trying to make a dynamic website, so I started to look for a coding school in Miami and I found the Best One 4Geeks Academy. And thanks to the programme they offer, the Income Sharing Agreement, I could enrol right away and Pay once I get a Job.
+                    <i class="fas fa-quote-right ml-2"></i>
+                </div>
                 <br/>
                 <div className={styles.bouttons}>
                     <a href="#two" className={["scroll mr-3", styles.buttonStyle].join(' ')}>previous</a>
@@ -264,19 +249,30 @@ const Presentation = () => {
                     <ul className={["mt-5",styles.listExperience].join(' ')}>
                         <h2>A Big Thank you to 4Geeks Academy <img src={geek} width="100px" alt="mm"/></h2>
                         <li>
-                            <img src={marcelo} width="40px" alt="marcelo"/> Marcelo and <img src={alejandro} width="40px" alt="alejandro"/> Alejandro.
+                            Marcelo and  Alejandro.
                         </li>
                         <li>
-                        <img src={colby} width="40px" alt="colby"/> Colby, <img src={paolo} width="40px" alt="paolo"/> Paolo, <img src={hernan} width="40px" alt="marcelo"/> Hernán.
+                            Colby, Paolo and Hernán.
                         </li>
                         <li>
-                        <img src={daniela} width="40px" alt="marcelo"/> Daniela and <img src={bridget} width="40px" alt="marcelo"/> Bridget.
+                            Daniela and  Bridget.
                         </li>
                     </ul>
+                    <div className={[styles.tortuga, goTurtle].join(' ')}>
+                        <img className="m-2" src={bridget} width="100px" alt="bridget"/>
+                        <img className="m-2" src={daniela} width="100px" alt="daniela"/> 
+                        <img className="m-2" src={hernan} width="100px" alt="hernan"/>
+                        <img className="m-2" src={paolo} width="100px" alt="paolo"/>
+                        <img className="m-2" src={colby} width="100px" alt="colby"/>
+                        <img className="m-2" src={alejandro} width="100px" alt="alejandro"/>
+                        <img className="m-2" src={marcelo} width="100px" alt="marcelo"/>
+                        <img src={tortuga} width="150px" alt="tortuga" />
+                    </div>
                 </div>
                 <br/>
                 <div className={styles.bouttons}>
                     <a href="#nine" className={["scroll mr-3", styles.buttonStyle].join(' ')}>previous</a>
+                    <button onClick={() => setGoTurtle('')} className={["scroll mr-3", styles.buttonStyle].join(' ')}>Thank You</button>
                 </div>
             </div>
                 
