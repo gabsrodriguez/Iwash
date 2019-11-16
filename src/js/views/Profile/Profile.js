@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Profile.module.css';
 
 const Profile = () => {
@@ -76,7 +77,7 @@ const Profile = () => {
                 <div class="form-group">
                     <label class="col-md-3 control-label"></label>
                     <div class="col-md-8">
-                        <input type="button" class="btn btn-danger m-2" value="Cancel" />
+                        <Link to="/setting" class="btn btn-danger m-2" >Cancel</Link>
                         <input type="button" class="btn btn-info m-2" value="Save Changes" />
                     </div>
                 </div>
