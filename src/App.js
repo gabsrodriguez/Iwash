@@ -34,6 +34,7 @@ function App() {
   const [dryersData, setDryersData] = useState();
   const [valuesData, setValuesData] = useState();
   const [currentWashing, setCurrentWashing] = useState();
+  const [historyWashing, setHistoryWashing] = useState();
   
   const [user, setUser] = useState(null);
   const [Auth, setAuth] = useState(null);
@@ -88,7 +89,25 @@ function App() {
   // },[])
   },[userId, userEmail, currentWashing, backen_url])
 
-  const providerValue = useMemo(() => ({ user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken }), [user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken]);
+  useEffect(() => {
+    fetch(backen_url+'/wash_history', {
+      method: 'POST',
+      cors: '*cors',
+      body: JSON.stringify({
+        user_id: userId,
+        user_email: userEmail
+      }),
+      headers:{
+          'Content-Type': 'application/json'
+      }
+    })
+      .then(res => res.json())
+      .then(res => setHistoryWashing(res))
+      .catch(error => console.log('error: ', error) );
+  // },[])
+  },[userId, userEmail, historyWashing, backen_url])
+
+  const providerValue = useMemo(() => ({ user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken, historyWashing }), [user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken, historyWashing]);
 
   return (
     <Router>

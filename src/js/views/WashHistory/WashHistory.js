@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../../../UserContext';
 import styles from './WashHistory.module.css';
-import Timer from '../../components/Timer/Timer';
 
 const WashHistory = () => {
 
