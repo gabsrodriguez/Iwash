@@ -264,8 +264,8 @@ const Presentation = () => {
                         <img className="m-2" src={hernan} width="100px" alt="hernan"/>
                         <img className="m-2" src={paolo} width="100px" alt="paolo"/>
                         <img className="m-2" src={colby} width="100px" alt="colby"/>
-                        <img className="m-2" src={alejandro} width="100px" alt="alejandro"/>
-                        <img className="m-2" src={marcelo} width="100px" alt="marcelo"/>
+                        <img className="m-2" src={alejandro} width="110px" alt="alejandro"/>
+                        <img className="m-2" src={marcelo} width="120px" alt="marcelo"/>
                         <img src={tortuga} width="150px" alt="tortuga" />
                     </div>
                 </div>
