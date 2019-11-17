@@ -16,7 +16,7 @@ const Wallet = () => {
         <section className={styles.section} style={{minHeight: windowHeight}}>
             <div className={["container text-center", styles.white].join(' ')}>
                 <h1>Wallet</h1>
-                <div className={styles.myCredit}>
+                <div className={["btn", styles.myCredit].join(' ')}>
                     ${wallet}
                 </div>
                 <h3>Add more credit to your wallet.</h3>
