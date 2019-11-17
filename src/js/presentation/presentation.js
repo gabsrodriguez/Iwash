@@ -200,8 +200,8 @@ const Presentation = () => {
                 <div className="m-3 text-center">
                     <img className="m-2" src={html} alt="html" width="100px" />
                     <img className="m-2" src={bootstrap} alt="bootstrap" width="100px" />
-                    <img className="m-2" src={js} alt="b" width="100px" />
-                    <img className="m-2" src={react} alt="b" width="100px" />
+                    <img className="m-2" src={js} alt="js" width="100px" />
+                    <img className="m-2" src={react} alt="react" width="100px" />
                     <img className="m-2" src={python} alt="b" width="100px" />
                     <img className="m-2" src={flask} alt="b" width="100px" />
                     <img className="m-2" src={mysql} alt="b" width="100px" />
