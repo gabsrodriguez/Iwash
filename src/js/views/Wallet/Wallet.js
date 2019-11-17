@@ -20,7 +20,6 @@ const Wallet = () => {
                     ${wallet}
                 </div>
                 <h3>Add more credit to your wallet.</h3>
-                <h3>your current credit is: ${wallet}</h3>
                 <h4>Choose the Amount:</h4>
                 {!valuesData ? 'Loading...' : (
                     valuesData.map((item,index) => {
