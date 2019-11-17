@@ -17,7 +17,7 @@ const Wallet = () => {
             <div className={["container text-center", styles.white].join(' ')}>
                 <h1>Wallet</h1>
                 <div className={styles.myCredit}>
-                        
+                    ${wallet}
                 </div>
                 <h3>Add more credit to your wallet.</h3>
                 <h3>your current credit is: ${wallet}</h3>
