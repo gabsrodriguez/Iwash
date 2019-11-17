@@ -87,8 +87,8 @@ function App() {
       .then(res => res.json())
       .then(res => setCurrentWashing(res))
       .catch(error => console.log('error: ', error) );
-  // },[])
-  },[userId, userEmail, currentWashing, backen_url])
+  },[])
+  // },[userId, userEmail, currentWashing, backen_url])
 
   useEffect(() => {
     fetch(backen_url+'/wash_history', {
