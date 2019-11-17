@@ -19,7 +19,7 @@ const Wallet = () => {
                 <div className={["btn", styles.myCredit].join(' ')}>
                     ${wallet}
                 </div>
-                <h3>Add more credit to your wallet.</h3>
+                <h3>Add more credit to your wallet.</h3>    
                 <h4>Choose the Amount:</h4>
                 {!valuesData ? 'Loading...' : (
                     valuesData.map((item,index) => {
