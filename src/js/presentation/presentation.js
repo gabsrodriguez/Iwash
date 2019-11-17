@@ -199,7 +199,7 @@ const Presentation = () => {
                 </div>
                 <div className="m-3 text-center">
                     <img className="m-2" src={html} alt="html" width="100px" />
-                    <img className="m-2" src={bootstrap} alt="b" width="100px" />
+                    <img className="m-2" src={bootstrap} alt="bootstrap" width="100px" />
                     <img className="m-2" src={js} alt="b" width="100px" />
                     <img className="m-2" src={react} alt="b" width="100px" />
                     <img className="m-2" src={python} alt="b" width="100px" />
