@@ -99,7 +99,7 @@ function Product({ product }) {
           },
         })
         .render(paypalRef.current);
-    }, [product.description, product.price, cash, backen_url]);
+    }, [product.description, product.price, cash, backen_url, homeUrl]);
   
     if (paidFor) {
       return (
