@@ -2,6 +2,10 @@
   "name": "iwash",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.15.0",
+    "npm": "6.13.0"
+  },
   "dependencies": {
     "mapbox-gl": "^1.5.0",
     "react": "^16.11.0",

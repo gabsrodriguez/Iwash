@@ -12,6 +12,7 @@ let currentWallet = localStorage.getItem('wallet');
 function Product({ product }) {
 
     const {backen_url} = useContext(UserContext);
+    const {homeUrl} = useContext(UserContext);
     const [cash] = useState(new Audio(cashSound));
     const [paidFor, setPaidFor] = useState(false);
     const [error, setError] = useState(null);
@@ -73,7 +74,8 @@ function Product({ product }) {
                         swal("Transaction Completed "+ name , "You Added $"+ amount + " to your Wallet", "success", {
                           button: "COOL",
                         }).then(() => {
-                            window.location.href = "http://localhost:3000/";
+                            // window.location.href = "http://localhost:3000/";
+                            window.location.href = homeUrl;
                             });
                         console.log(details);
                         console.log(res);

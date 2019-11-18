@@ -27,6 +27,7 @@ const Rasp = lazy(() => import('./js/views/Rasp/Rasp'));
 
 function App() {
 
+  const [homeUrl] = useState('https://iwash-react.herokuapp.com/');
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
   const [backen_url] = useState('http://iwash-backend.herokuapp.com');
   const [mapBoxPublicToken] = useState('pk.eyJ1Ijoic2FtaXJiZW56YWRhIiwiYSI6ImNrMnV1MG9vYjB6aW4zZXFjNGs1aHkxbmkifQ.rXgK6pv70xZsGs-NwOmodw');
@@ -108,7 +109,7 @@ function App() {
   // },[])
   },[userId, userEmail, historyWashing, backen_url])
 
-  const providerValue = useMemo(() => ({ user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken, historyWashing }), [user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken, historyWashing]);
+  const providerValue = useMemo(() => ({ user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken, historyWashing, homeUrl }), [user, setUser, Auth, setAuth, washersData, dryersData, valuesData, setValuesData, currentWashing, backen_url, windowHeight, mapBoxPublicToken, historyWashing, homeUrl]);
 
   return (
     <Router>
