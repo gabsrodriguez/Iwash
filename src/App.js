@@ -29,7 +29,8 @@ function App() {
 
   const [homeUrl] = useState('https://iwash-react.herokuapp.com/');
   const [windowHeight, setWindowHeight] = useState(window.innerHeight);
-  const [backen_url] = useState('http://iwash-backend.herokuapp.com');
+  // const [backen_url] = useState('http://iwash-backend.herokuapp.com');
+  const [backen_url] = useState(process.env.REACT_HEROKU_BACKEND);
   const [mapBoxPublicToken] = useState('pk.eyJ1Ijoic2FtaXJiZW56YWRhIiwiYSI6ImNrMnV1MG9vYjB6aW4zZXFjNGs1aHkxbmkifQ.rXgK6pv70xZsGs-NwOmodw');
 
   const [washersData, setWashersData] = useState();
