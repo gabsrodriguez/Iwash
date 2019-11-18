@@ -203,16 +203,16 @@ const Presentation = () => {
                     <img className="m-2" src={js} alt="js" width="100px" />
                     <img className="m-2" src={react} alt="react" width="100px" />
                     <img className="m-2" src={python} alt="python" width="100px" />
-                    <img className="m-2" src={flask} alt="b" width="100px" />
-                    <img className="m-2" src={mysql} alt="b" width="100px" />
-                    <img className="m-2" src={raspberry} alt="b" width="100px" />
-                    <img className="m-2" src={paypal} alt="b" width="100px" />
-                    <img className="m-2" src={google} alt="b" width="100px" />
+                    <img className="m-2" src={flask} alt="flask" width="100px" />
+                    <img className="m-2" src={mysql} alt="mysql" width="100px" />
+                    <img className="m-2" src={raspberry} alt="raspberry" width="100px" />
+                    <img className="m-2" src={paypal} alt="paypal" width="100px" />
+                    <img className="m-2" src={google} alt="google" width="100px" />
                 </div>
                 <div className="container">
                     <ul className={["mt-5",styles.listExperience].join(' ')}>
                         <li>
-                            We are using HTML, CSS, Bootstrap, React.js (javaScript), Phyton3/Flask, MySql Database and Raspberry Pi.
+                            We are using HTML, CSS, Bootstrap,javaScript, React.js, Phyton3, Flask, MySql Database and Raspberry Pi.
                         </li>
                         <li>
                             We choose to use as Third Party, Google Maps, PayPal payment method.
