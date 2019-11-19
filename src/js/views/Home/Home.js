@@ -60,8 +60,8 @@ const Home = () => {
                         Website / Application Helps you forget the complexity and hustle of using Coins and Cards.
                     </h3>
                     <div className="buttons-w3pvt text-center mt-lg-4 pb-lg-5">
-                        <Link to="/about" className={["scroll mr-3", styles.buttonStyle].join(' ')}>Read More</Link>
-                        <Link to="/contact" className={["scroll",styles.buttonStyle, styles.buttonStyle2].join(' ')}>Contact Us</Link>
+                        <Link to="/login" className={["scroll mr-3", styles.buttonStyle].join(' ')}>Login Now</Link>
+                        <Link to="/register" className={["scroll",styles.buttonStyle, styles.buttonStyle2].join(' ')}>Sign Up Now</Link>
                     </div>
                 </div>
             </div>
