@@ -38,7 +38,7 @@ const WashHistory = () => {
                             <td>{item.cycleComplete}</td>
                         </tr>
                     )
-                })}
+                }).reverse()}
                 </tbody>
             </table>
 
