@@ -82,7 +82,7 @@ const Machine = (props) => {
           .catch(error => console.log(error));
         // to have the right address ip, type in rasp terminal: ifconfig wlan0
         // once you get that address, change it here and in the rasp app.py
-        fetch('http://172.16.100.47:3000/iwash',{
+        fetch('http://10.10.3.109:3000/iwash',{
             method: 'POST',
             body: JSON.stringify({
                 "action": cycle,
